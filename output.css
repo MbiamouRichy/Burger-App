@@ -588,6 +588,14 @@ video {
   top: 150px;
 }
 
+.top-\[100px\]{
+  top: 100px;
+}
+
+.top-\[130px\]{
+  top: 130px;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -759,6 +767,14 @@ video {
   gap: 35px;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
 .self-center{
   align-self: center;
 }
@@ -812,6 +828,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-55{
+  --tw-bg-opacity: 0.55;
+}
+
 .stroke-red-50{
   stroke: #fef2f2;
 }
@@ -829,6 +849,36 @@ video {
 .py-\[11px\]{
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.px-52{
+  padding-left: 13rem;
+  padding-right: 13rem;
+}
+
+.px-28{
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .text-center{
@@ -859,6 +909,22 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[1vw\]{
+  font-size: 1vw;
+}
+
+.text-\[1vh\]{
+  font-size: 1vh;
+}
+
+.text-\[800px\]{
+  font-size: 800px;
+}
+
+.text-\[830px\]{
+  font-size: 830px;
 }
 
 .font-medium{
@@ -941,8 +1007,8 @@ div.active{
   left: 0px;
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
