@@ -15,6 +15,11 @@
     <main
       class="flex flex-col w-screen h-screen overflow-hidden min-w-full min-h-full relative bg-[#861511]"
     >
+      <img
+        src="./assets/left-long-solid.svg"
+        class="retour transition-all hidden w-10 h-16 z-50 cursor-pointer absolute top-0 left-8 mt-[30px]"
+      />
+
       <div
         class="w-[800px] h-16 flex justify-between self-center mt-[20px] content-center bg-white rounded-[100px]"
       >
@@ -56,7 +61,7 @@
         </div>
       </div>
 
-      <div class="relative ml-[118px] mt-[30px]">
+      <div class="relative accueil-vue transition-all ml-[118px] mt-[30px]">
         <div class="flex justify-between flex-row">
           <p
             class="text-white text-[270px] font-normal font-['Jomhuria'] leading-[150px]"
@@ -76,6 +81,54 @@
           src="./assets/images.svg"
           alt=""
         />
+      </div>
+
+      <div
+        class="z-50 flex justify-between content-center absolute bottom-5 left-1/2 -translate-x-1/2"
+      >
+        <p
+          class="text-center div_expore cursor-pointer text-white shadow-lg shadow-black px-5 py-3 rounded-xl bg-red-300 w-full animate-bounce text-xl"
+        >
+          Explore
+        </p>
+        <div class="btn-left hidden cursor-pointer w-full h-full">
+          <svg
+            width="52"
+            height="52"
+            viewBox="0 0 52 52"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.4"
+              d="M26 47.6667C37.9661 47.6667 47.6666 37.9662 47.6666 26C47.6666 14.0338 37.9661 4.33333 26 4.33333C14.0338 4.33333 4.33331 14.0338 4.33331 26C4.33331 37.9662 14.0338 47.6667 26 47.6667Z"
+              fill="white"
+            />
+            <path
+              d="M28.73 35.2733C28.3183 35.2733 27.9067 35.1217 27.5817 34.7967L19.9333 27.1483C19.305 26.52 19.305 25.48 19.9333 24.8517L27.5817 17.2033C28.21 16.575 29.25 16.575 29.8783 17.2033C30.5067 17.8317 30.5067 18.8717 29.8783 19.5L23.3783 26L29.8783 32.5C30.5067 33.1283 30.5067 34.1683 29.8783 34.7967C29.575 35.1217 29.1633 35.2733 28.73 35.2733Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="btn-right hidden cursor-pointer w-full h-full">
+          <svg
+            width="52"
+            height="52"
+            viewBox="0 0 52 52"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.4"
+              d="M26 47.6667C37.9661 47.6667 47.6666 37.9662 47.6666 26C47.6666 14.0338 37.9661 4.33333 26 4.33333C14.0338 4.33333 4.33331 14.0338 4.33331 26C4.33331 37.9662 14.0338 47.6667 26 47.6667Z"
+              fill="white"
+            />
+            <path
+              d="M23.27 35.2733C22.8583 35.2733 22.4466 35.1217 22.1216 34.7967C21.4933 34.1683 21.4933 33.1283 22.1216 32.5L28.6216 26L22.1216 19.5C21.4933 18.8717 21.4933 17.8317 22.1216 17.2033C22.75 16.575 23.79 16.575 24.4183 17.2033L32.0666 24.8517C32.695 25.48 32.695 26.52 32.0666 27.1483L24.4183 34.7967C24.0933 35.1217 23.6816 35.2733 23.27 35.2733Z"
+              fill="white"
+            />
+          </svg>
+        </div>
       </div>
       <div
         class="w-screen absolute top-[150px] left-0 text-[600px] text-center texte-bas stroke-red-50 font-normal font-['Jomhuria']"
