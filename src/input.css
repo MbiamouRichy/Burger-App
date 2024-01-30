@@ -9,3 +9,56 @@
   -webkit-text-stroke: 2px rgba(247, 241, 241, 0.3);
   -webkit-text-fill-color: transparent;
 }
+.slide {
+  @apply hidden;
+}
+.indicateur .active {
+  @apply bg-white;
+}
+div.active {
+  @apply flex;
+}
+.slide .titreSlide {
+  @apply text-white text-[300px] font-normal font-['Jomhuria'] transition-all;
+}
+.slide .titreSlide {
+  animation: monte 0.5s ease-in-out forwards;
+}
+@keyframes monte {
+  to {
+    transform: translateY(-150px);
+  }
+}
+.slide .img1 {
+  @apply absolute left-1/2 top-[-500px] transition-all;
+}
+.slide .img1 {
+  animation: descends 0.5s ease-in-out forwards;
+}
+@keyframes descends {
+  to {
+    transform: translateY(-1500px);
+  }
+}
+.slide .img2 {
+  @apply absolute left-0 w-full object-contain h-full transition-all;
+  animation: descendsIngredient 0.5s ease-in-out forwards;
+}
+@keyframes descendsIngredient {
+  from {
+    transform: translateY(2000px);
+  }
+}
+
+.slide .img3 {
+  @apply absolute left-1/2 w-[267px] z-50 transition-all;
+  animation: descendsIngredient 0.5s ease-in-out forwards;
+}
+@keyframes descendsIngredient {
+  from {
+    bottom: -300px;
+  }
+  to {
+    bottom: 50px;
+  }
+}

@@ -15,11 +15,12 @@
     <main
       class="flex flex-col w-screen h-screen overflow-hidden min-w-full min-h-full relative bg-[#861511]"
     >
+      <!-- bouton de retour -->
       <img
         src="./assets/left-long-solid.svg"
         class="retour transition-all hidden w-10 h-16 z-50 cursor-pointer absolute top-0 left-8 mt-[30px]"
       />
-
+      <!-- Navbar -->
       <div
         class="w-[800px] h-16 flex justify-between self-center mt-[20px] content-center bg-white rounded-[100px]"
       >
@@ -60,37 +61,97 @@
           </p>
         </div>
       </div>
+      <!-- Corps -->
+      <div class="ml-[118px] z-10 mt-[30px]">
+        <!-- slider -->
+        <div class="slider hidden">
+          <div class="slide active">
+            <p class="titreSlide">Burger King</p>
+            <img
+              class="img2"
+              src="./assets/Ingrédients1.png"
+              alt="image ingredient"
+            />
+            <img
+              class="img3"
+              src="./assets/Burger_entier.svg"
+              alt="Burger entier"
+            />
+          </div>
+          <div class="slide">
+            <p class="titreSlide">Burger Salade</p>
+            <img
+              class="img2"
+              src="./assets/Ingrédients2.png"
+              alt="image ingredient"
+            />
+            <img
+              class="img3"
+              src="./assets/Burger_entier.svg"
+              alt="Burger entier"
+            />
+          </div>
+          <div class="slide">
+            <p class="titreSlide">Burger Légume</p>
+            <img
+              class="img2"
+              src="./assets/Ingrédients3.png"
+              alt="image ingredient"
+            />
+            <img
+              class="img3"
+              src="./assets/Burger_entier.svg"
+              alt="Burger entier"
+            />
+          </div>
+        </div>
 
-      <div class="relative accueil-vue transition-all ml-[118px] mt-[30px]">
-        <div class="flex justify-between flex-row">
-          <p
-            class="text-white text-[270px] font-normal font-['Jomhuria'] leading-[150px]"
-          >
-            Burger<br />King
-            <br />
-            PROTYTYPE
-          </p>
+        <!-- Indicateur du scroll -->
+        <div
+          class="indicateur hidden z-[200] absolute left-0 top-1/2 translate-x-1/2"
+        >
+          <div
+            class="ind active transition-all rounded-full w-4 h-4 border border-white mt-2"
+          ></div>
+          <div
+            class="ind transition-all rounded-full w-4 h-4 border border-white mt-2"
+          ></div>
+          <div
+            class="ind transition-all rounded-full w-4 h-4 border border-white mt-2"
+          ></div>
+        </div>
+        <!-- Accueil -->
+        <div class="relative accueil-vue transition-all">
+          <div class="flex justify-between flex-row">
+            <p
+              class="text-white text-[270px] font-normal font-['Jomhuria'] leading-[150px]"
+            >
+              Burger<br />King
+              <br />
+              PROTYTYPE
+            </p>
+            <img
+              class="w-[376px] h-[480px] relative right-[150px] z-10"
+              src="./assets/burger.svg"
+              alt="image_burger"
+            />
+          </div>
           <img
-            class="w-[376px] h-[480px] relative right-[150px] z-10"
-            src="./assets/burger.svg"
-            alt="image_burger"
+            class="absolute top-0 left-0 w-full h-full"
+            src="./assets/images.svg"
+            alt=""
           />
         </div>
-        <img
-          class="absolute top-0 left-0 w-full h-full"
-          src="./assets/images.svg"
-          alt=""
-        />
       </div>
-
+      <!-- Bouton explore et navigation du slider -->
       <div
         class="z-50 flex justify-between content-center absolute bottom-5 left-1/2 -translate-x-1/2"
       >
-        <p
+        <div
           class="text-center div_expore cursor-pointer text-white shadow-lg shadow-black px-5 py-3 rounded-xl bg-red-300 w-full animate-bounce text-xl"
         >
           Explore
-        </p>
+        </div>
         <div class="btn-left hidden cursor-pointer w-full h-full">
           <svg
             width="52"
@@ -130,8 +191,9 @@
           </svg>
         </div>
       </div>
+      <!-- Pieds de page -->
       <div
-        class="w-screen absolute top-[150px] left-0 text-[600px] text-center texte-bas stroke-red-50 font-normal font-['Jomhuria']"
+        class="w-screen absolute z-0 top-[150px] left-0 text-[600px] text-center texte-bas stroke-red-50 font-normal font-['Jomhuria']"
       >
         Burger
       </div>
