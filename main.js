@@ -7,8 +7,10 @@ let slides = document.querySelectorAll(".slide");
 let inds = document.querySelectorAll(".ind");
 let DivSlides = document.querySelector(".slider");
 let indicateur = document.querySelector(".indicateur");
+let main = document.querySelector("main");
 let activeSlide = 0;
 let activeSlideAnimate = 0;
+let colorBg = ["#861411", "#0C722F", "#C58200"];
 
 div_expore.addEventListener("click", () => {
   accueil_vue.className += " hidden";
@@ -50,4 +52,6 @@ function changeSlide() {
   inds.forEach((ind) => ind.classList.remove("active"));
   slides[activeSlide].className += " active";
   inds[activeSlide].className += " active";
+  main.style.backgroundColor = `${colorBg[activeSlide]}`;
 }
+// Modifier le background
