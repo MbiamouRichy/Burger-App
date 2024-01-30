@@ -29,17 +29,7 @@ div.active {
     transform: translateY(-150px);
   }
 }
-.slide .img1 {
-  @apply absolute left-1/2 top-[-500px] transition-all;
-}
-.slide .img1 {
-  animation: descends 0.5s ease-in-out forwards;
-}
-@keyframes descends {
-  to {
-    transform: translateY(-1500px);
-  }
-}
+
 .slide .img2 {
   @apply absolute left-0 w-full object-contain h-full transition-all;
   animation: descendsIngredient 0.5s ease-in-out forwards;
@@ -47,6 +37,9 @@ div.active {
 @keyframes descendsIngredient {
   from {
     transform: translateY(2000px);
+  }
+  to {
+    transform: translateY(10px);
   }
 }
 
