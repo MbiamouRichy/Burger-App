@@ -31,7 +31,7 @@ div.active {
 }
 
 .slide .img2 {
-  @apply absolute left-0 w-full h-full object-center transition-all;
+  @apply absolute left-0 w-full h-full object-contain transition-all;
   animation: descendsIngredient 0.5s ease-in-out forwards;
 }
 @keyframes descendsIngredient {
