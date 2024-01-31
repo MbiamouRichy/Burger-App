@@ -29,7 +29,6 @@ retour.addEventListener("click", () => {
   DivSlides.classList += " hidden";
   retour.classList += " hidden";
   indicateur.classList.add("hidden");
-  main.style.backgroundColor = `${colorBg[0]}`;
 });
 
 // Navigation du slide
