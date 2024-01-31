@@ -23,7 +23,7 @@ div_expore.addEventListener("click", () => {
 });
 retour.addEventListener("click", () => {
   accueil_vue.classList.remove("hidden");
-  btn_left.classList = " hidden";
+  btn_left.classList += " hidden";
   btn_right.classList += " hidden";
   div_expore.classList.remove("hidden");
   DivSlides.classList += " hidden";
