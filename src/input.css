@@ -19,7 +19,7 @@ div.active {
   @apply flex;
 }
 .slide .titreSlide {
-  @apply text-white text-[300px] font-normal font-['Jomhuria'] transition-all;
+  @apply text-white text-center lg:text-[230px] xl:text-[300px] font-normal font-['Jomhuria'] transition-all;
 }
 .slide .titreSlide {
   animation: monte 0.5s ease-in-out forwards;

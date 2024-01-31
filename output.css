@@ -548,6 +548,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -586,6 +590,42 @@ video {
 
 .top-\[130px\]{
   top: 130px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.-bottom-\[100px\]{
+  bottom: -100px;
+}
+
+.bottom-\[100px\]{
+  bottom: 100px;
+}
+
+.top-full{
+  top: 100%;
+}
+
+.-top-full{
+  top: -100%;
+}
+
+.-top-1\/2{
+  top: -50%;
+}
+
+.top-\[200px\]{
+  top: 200px;
+}
+
+.top-\[100px\]{
+  top: 100px;
+}
+
+.top-\[90px\]{
+  top: 90px;
 }
 
 .z-0{
@@ -727,6 +767,10 @@ video {
   cursor: pointer;
 }
 
+.resize{
+  resize: both;
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -769,6 +813,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.text-wrap{
+  text-wrap: wrap;
 }
 
 .rounded-\[100px\]{
@@ -856,6 +904,10 @@ video {
   font-family: 'Jomhuria';
 }
 
+.text-\[100px\]{
+  font-size: 100px;
+}
+
 .text-\[270px\]{
   font-size: 270px;
 }
@@ -888,6 +940,10 @@ video {
 
 .leading-\[150px\]{
   line-height: 150px;
+}
+
+.leading-\[90px\]{
+  line-height: 90px;
 }
 
 .text-red-900{
@@ -936,14 +992,29 @@ div.active{
 }
 
 .slide .titreSlide{
+  text-align: center;
   font-family: 'Jomhuria';
-  font-size: 300px;
   font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 1024px){
+  .slide .titreSlide{
+    font-size: 230px;
+  }
+}
+
+@media (min-width: 1280px){
+  .slide .titreSlide{
+    font-size: 300px;
+  }
+}
+
+.slide .titreSlide {
   animation: monte 0.5s ease-in-out forwards;
 }
 
@@ -994,5 +1065,81 @@ div.active{
 
   to {
     bottom: 50px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:top-\[200px\]{
+    top: 200px;
+  }
+
+  .lg\:top-\[100px\]{
+    top: 100px;
+  }
+
+  .lg\:top-\[150px\]{
+    top: 150px;
+  }
+
+  .lg\:ml-\[50px\]{
+    margin-left: 50px;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:text-\[1vw\]{
+    font-size: 1vw;
+  }
+
+  .lg\:text-\[500px\]{
+    font-size: 500px;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:top-\[130px\]{
+    top: 130px;
+  }
+
+  .xl\:top-\[530px\]{
+    top: 530px;
+  }
+
+  .xl\:top-\[330px\]{
+    top: 330px;
+  }
+
+  .xl\:top-\[230px\]{
+    top: 230px;
+  }
+
+  .xl\:top-\[90px\]{
+    top: 90px;
+  }
+
+  .xl\:ml-\[118px\]{
+    margin-left: 118px;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
+
+  .xl\:text-\[830px\]{
+    font-size: 830px;
+  }
+
+  .xl\:text-\[800px\]{
+    font-size: 800px;
+  }
+
+  .xl\:text-\[750px\]{
+    font-size: 750px;
   }
 }
